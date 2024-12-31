@@ -1,0 +1,12 @@
+name: aiml25-ma1
+channels:
+  - conda-forge
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - pytorch
+  - matplotlib
+  - ipykernel
+  - numpy
+  - scikit-learn
+  - torchvision
