@@ -1,9 +1,11 @@
-<<<<<<< HEAD
-notebooks/cnn_solution.ipynb
+
 aiml25-ma1
 data
 MA1-description.docx
-=======
+.pre-commit-config.yaml
+notebooks/nn_solution.ipynb
+notebooks/cnn_solution.ipynb
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -175,4 +177,3 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
->>>>>>> 7f444247c0666d856a95d87ce6b358bdefa7c25a
