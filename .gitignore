@@ -177,3 +177,5 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+assignments/cnn_solution.ipynb
+assignments/nn_solution.ipynb
