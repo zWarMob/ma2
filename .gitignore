@@ -5,6 +5,7 @@ MA1-description.docx
 .pre-commit-config.yaml
 notebooks/nn_solution.ipynb
 notebooks/cnn_solution.ipynb
+material/data/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

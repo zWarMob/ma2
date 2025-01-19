@@ -83,8 +83,7 @@ Build a *6-layer* (or deeper) CNN for object classification in the `cnn.ipynb` n
 Feel free to play around with the model architecture - add/delete layers, adjust layer parameters etc. - and see how the training time/performance changes, but start with the following:
 
 * 2D Convolutional layer
-* Max pooling layer
-* 2D Convolutional layer
+* Non-linearity (ReLU)
 * Max pooling layer
 * Flatten the output from the last convolutional layer (this part is already given in the code)
 * Fully Connected Layer with 128 hidden units
