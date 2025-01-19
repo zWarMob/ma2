@@ -46,9 +46,7 @@ Feel free to play around with the model architecture and see how the training ti
 * Input Layer: Image (784 dimensions) ->  
 * Fully connected layer (500 hidden units) -> 
 * Nonlinearity (ReLU) ->  
-* Fully connected (10 hidden units) -> 
-* softmax
-
+* Fully connected (10 hidden units - digits 0-9) -> 
 
 *Some hints*:
 - Even as we add additional layers, we still only require a single optimizer to learn the parameters. 
