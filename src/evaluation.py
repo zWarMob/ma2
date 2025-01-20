@@ -9,6 +9,7 @@ def evaluate(
     device: torch.device,
     criterion: torch.nn.Module,
     class_names: list = None,
+    flatten: bool = True,
 ) -> None:
     """
     Evaluates a PyTorch model on a given dataset and prints performance metrics.
@@ -19,6 +20,7 @@ def evaluate(
         device (torch.device): The device to perform computations (e.g., 'cpu' or 'cuda').
         criterion (torch.nn.Module): The loss function used for evaluation.
         class_names (list): List of class names for the classification report. Defaults to class indices.
+        flatten (bool): Whether to flatten input tensors to 1D. Useful for feedforward networks. Default is False.
 
     Returns:
         None
@@ -37,7 +39,8 @@ def evaluate(
             images, labels = images.to(device), labels.to(device)
 
             # Flatten images if necessary
-            images = images.view(images.size(0), -1)
+            if flatten:
+                images = images.view(images.size(0), -1)
 
             # Forward pass
             outputs = model(images)

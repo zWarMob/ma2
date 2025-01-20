@@ -11,6 +11,7 @@ def fit(
     optimizer: torch.optim.Optimizer,
     criterion: torch.nn.Module,
     num_epochs: int,
+    flatten: bool = True,
 ) -> tuple[torch.nn.Module, dict[str, list]]:
     """
     Trains and validates a PyTorch neural network model.
@@ -23,6 +24,7 @@ def fit(
         optimizer (torch.optim.Optimizer): Optimizer to update the model's parameters based on the gradients.
         criterion (torch.nn.Module): The loss function to compute the error between predictions and true labels.
         num_epochs (int): Number of epochs (full passes through the training data) to train the model.
+        flatten (bool): Whether to flatten input tensors to 1D. Useful for feedforward networks. Default is False.
 
     Returns:
         Dict[str, list]: A dictionary containing training and validation loss and accuracy histories:
@@ -70,7 +72,8 @@ def fit(
             images, labels = images.to(device), labels.to(device)
 
             # Flatten the images into 1D vectors (if necessary for fully connected layers)
-            images = images.view(images.size(0), -1)
+            if flatten:
+                images = images.view(images.size(0), -1)
 
             # Forward pass: Compute model outputs and loss
             outputs = model(images)
@@ -105,7 +108,9 @@ def fit(
         with torch.no_grad():  # No gradients needed during validation
             for images, labels in val_loader:
                 images, labels = images.to(device), labels.to(device)
-                images = images.view(images.size(0), -1)
+
+                if flatten:
+                    images = images.view(images.size(0), -1)
 
                 outputs = model(images)  # Forward pass
                 loss = criterion(outputs, labels)  # Compute loss
