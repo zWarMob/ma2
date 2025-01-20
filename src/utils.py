@@ -14,6 +14,6 @@ def get_device() -> DeviceLikeType:
         device = "cpu"
 
     device = torch.device(device)
-    print(f"Running pytorch version {torch.__version__}) with backend = {device}")
+    print(f"Running pytorch version ({torch.__version__}) with backend = {device}")
 
     return device
