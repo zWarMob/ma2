@@ -133,8 +133,8 @@ def fit(
         # Print progress for the current epoch
         print(
             f"Epoch [{epoch+1}/{num_epochs}]: "
-            f"Train Loss: {train_loss:.4f}, Train Accuracy: {train_accuracy:.2f}%, "
-            f"Val Loss: {val_loss:.4f}, Val Accuracy: {val_accuracy:.2f}%"
+            f"Train Loss: {train_loss:.4f} | Train Accuracy: {train_accuracy:.2f}% | "
+            f"Val Loss: {val_loss:.4f} | Val Accuracy: {val_accuracy:.2f}%"
         )
 
     return model, history

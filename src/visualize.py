@@ -14,6 +14,23 @@ def imshow(image: "torch.Tensor", label: str, classes: list) -> None:
     plt.show()
 
 
+def show_cifar_img(image: "torch.Tensor", label: str, classes: list) -> None:
+    """# Visualizing images from our CIFAR10 dataset is a bit more complex than
+    the MNIST dataset because we have 3 color channels (RGB) instead of 1.
+    Furthermore, we added a normalization step to our preprocessing steps which we
+    need to undo in order to visualize the image. The following function will help us
+    visualize images"""
+
+    image = image.numpy().transpose((1, 2, 0))  # Convert from CxHxW to HxWxC
+    mean = np.array([0.4914, 0.4822, 0.4465])  # CIFAR-10 normalization mean
+    std = np.array([0.2023, 0.1994, 0.2010])  # CIFAR-10 normalization std
+    image = std * image + mean  # Unnormalize
+    image = np.clip(image, 0, 1)  # Clip values to [0, 1]
+    plt.title(f"Label: {classes[label]}")
+    plt.imshow(image)
+    plt.show()
+
+
 def plot_probabilities(
     image: "torch.Tensor",
     label: str,
