@@ -19,24 +19,7 @@ This repository contains the first mandatory assignment (MA1) for AIML25.
 
 ### 1.1. Introduction
 
-Traditional machine learning methods, like logistic regression, are often sufficient for datasets that are linearly separable. However, more complex problems, such as image recognition and natural language understanding/processing (NLU/P), sometimes demand a more intricate approach. Neural networks, which incorporate additional layers, excel at learning non-linear relationships. These extra layers, known as *hidden* layers, process the input into one or more intermediate forms before generating the final prediction.
 
-Logistic regression achieves this transformation using a single fully-connected layer. We can think of this as a Single-Layer Perceptron. This layer performs a linear transformation (a matrix multiplication combined with a bias). In contrast, a neural network with multiple connected layers is typically referred to as a Multi-Layer Perceptron (MLP). For instance, in the simple MLP shown below, a 4-dimensional input is mapped to a 5-dimensional hidden representation, which is subsequently transformed into a single output used for prediction. This is a "simple" architecture: A so-called feedforward neural network. 
-
-<img src="./media/MLP.png" width="500"/>
-
-
-#### Nonlinearities revisited
-
-Nonlinearities are usually applied between the layers of a neural network. As discussed in class 2, there are several reasons for this. A key reason is that without any nonlinearity, a sequence of linear transformations (fully connected layers) reduces to a single linear transformation, limiting the model's expressiveness to that of a single layer. Including nonlinearities between layers prevents this reduction, enabling neural networks to approximate far more complex functions. This is what makes neural networks so powerful.
-
-Numerous nonlinear activation functions are frequently employed in neural networks, but one of the most commonly used is the [rectified linear unit (ReLU)](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)):
-
-```math
-\begin{align}
-x = \max(0,x)
-\end{align}
-```
 
 ### 1.2. Assignment
 In this assignment, your task will be to construct an MLP for the well-known MNIST dataset. Build a 2-layer MLP for MNIST digit classfication in the `nn.ipynb` notebook (assigntments/nn.ipynb).
