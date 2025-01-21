@@ -2,7 +2,9 @@
 
 # Mandatory assignment 1
 
-This repository contains the first mandatory assignment (MA1) for AIML25. 
+This repository contains the first mandatory assignment (MA1) for AIML25. It consists of two parts: Neural Networks and Convolutional Neural Networks.
+
+Please see due dates and other relevant information in the assignment description on Canvas.
 
 ***
 
@@ -17,12 +19,7 @@ This repository contains the first mandatory assignment (MA1) for AIML25.
 
 ## Part 1: Multi-Layer Perceptrons
 
-### 1.1. Introduction
-
-
-
-### 1.2. Assignment
-In this assignment, your task will be to construct an MLP for the well-known MNIST dataset. Build a 2-layer MLP for MNIST digit classfication in the `nn.ipynb` notebook (assigntments/nn.ipynb).
+In this assignment, your task will be to construct an MLP for the well-known MNIST dataset. Build a n-layer MLP (artificial neural network) for MNIST digit classfication in the `nn.ipynb` notebook (`assigntments/nn.ipynb`).
 
 Feel free to play around with the model architecture and see how the training time/performance changes, but to begin, try the following:
 
