@@ -15,21 +15,37 @@
 
 # Mandatory assignment 1
 
-This repository contains the first mandatory assignment (MA1) for AIML25. It consists of two parts: Neural Networks and Convolutional Neural Networks.
+This repository contains the first mandatory assignment (MA1) for AIML25. It consists of two parts: Artificial Neural Networks and Convolutional Neural Networks. Please read the description for each part of the assignment carefully. 
 
-You are given a lot of boilerplate code to help you get started. You will need to fill in the missing parts to complete the assignment. Everything necessary to complete the assignments are given in the notebooks under `/materials`. Here you will find a step-by-step notebook for both parts of the assignment.
+* **Dev setup**: To complete this assignment, you will need to have followed the Development Setup guide. Please complete this setup before starting the assignment.
+
+* **Helper code**: You are given a lot of boilerplate code as functions in `/src` to be imported into each of the notebooks. This is to simplify the assignments. Please acquaint yourself with this "helper code".
+
+* **Guides**: Each of the sub-assignments have a corresponding *guide notebook*. Everything needed to complete the assignments are in the notebooks. The guide notebooks are there to help you understand and practice the concepts. Please refer to the table below:
 
 | Assignment | Assignment notebook | Guide notebook | Description |
 | --- | --- | --- | --- |
-| Part 1 | assignments/nn.ipynb | materials/nns_pytorch.ipynb | Multi-Layer Perceptrons |
-| Part 2 | assignments/cnn.ipynb | materials/cnns_pytorch.ipynb | Convolutional Neural Networks |
+| Part 1 | [assignments/nn.ipynb](assignments/nn.ipynb) | [materials/nns_pytorch.ipynb](materials/nns_pytorch.ipynb) | Artificial Neural Networks |
+| Part 2 | [assignments/cnn.ipynb](assignments/cnn.ipynb) | [materials/cnns_pytorch.ipynb](materials/cnns_pytorch.ipynb) | Convolutional Neural Networks |
 
-Please see due dates and other relevant information in the assignment description on Canvas.
+**Please see due dates and other relevant information in the assignment description on Canvas.**
 
+## Getting started
+Please see sections VII - XI in the `Development setup guide` document on Canvas for instructions. To iterate, you need to:
 
-## Part 1: Multi-Layer Perceptrons
+1. Fork this repository to your own GitHub account.
+2. Clone the forked repository to your local machine.
+3. Create a virtual environment and install the required packages.
+4. Start working on the assignment.
+5. Commit and push your changes to your GitHub repository.
+6. Submit a link to your GH assignment repo on Canvas.
 
-In this assignment, your task will be to construct an MLP for the well-known MNIST dataset. Build a n-layer MLP (artificial neural network) for MNIST digit classfication in the `nn.ipynb` notebook (`assigntments/nn.ipynb`). See how good of a model you can build!
+## Part 1: Artificial Neural Networks
+In this assignment, your task is to construct an MLP architecture for the well-known [MNIST dataset](https://www.kaggle.com/datasets/hojjatk/mnist-dataset).
+
+* Read through the `material/nns_pytorch.ipynb` notebook to understand the basics of PyTorch and how to build a simple neural network.
+* Build a n-layer MLP (artificial neural network) in the `assignments/nn.ipynb` notebook.
+* See how good of a model you can build!
 
 Feel free to play around with the model architecture and see how the training time/performance changes, but to begin, you can try the following:
 
@@ -39,18 +55,19 @@ Feel free to play around with the model architecture and see how the training ti
 * Fully connected (10 hidden units - digits 0-9) -> 
 
 *Some hints*:
-- Everything needed to complete the assignment is in the notebook. 
 - To get the best performance, you may want to play with the learning rate and the number of training epochs.
+- A flattened image of size 28x28 is 784 dimensions. This is the input to the network.
 
 ***
 
 ## Part 2: Convolutional Neural Networks
+In this assignment, your task is to build a CNN architecture for multi-class classification on the famous [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html). 
 
-In this assignment, your task is to build a CNN for multi-class classification on the famous CIFAR-10 dataset. You will practice building networks with convolutional and pooling layers, as well as fully connected layers.
+* Read through the `material/cnns_pytorch.ipynb` notebook to understand the basics of how to build a convolutional neural network.
+* Build a n-layer CNN in the `assignments/cnn.ipynb` notebook.
+* See how good of a model you can build!
 
-Build a *n-layer*  CNN for object classification in the `cnn.ipynb` notebook (assignments/nn.ipynb).
-
-Feel free to play around with the model architecture - add/delete layers, adjust layer parameters etc. - and see how the training time/performance changes. Try to get the best performance you can!
+Feel free to play around with the model architecture - add, layers, adjust layer parameters etc. - and see how the training time/performance changes. Try to get the best performance you can!
 
 You can start with the following:
 
@@ -73,8 +90,7 @@ You can start with the following:
 ___
 
 
-
-### Submission
+## Submission
 
 Please see sections VII - XI in the `AIML25-dev-setup.pdf` document on Canvas for instructions on 
 
