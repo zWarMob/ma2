@@ -1,14 +1,10 @@
-name: aiml25-ma1
+name: aiml25-ma2
 channels:
   - conda-forge
   - https://repo.anaconda.com/pkgs/main
   - https://repo.anaconda.com/pkgs/r
 dependencies:
-  - imageio=2.36.1
   - ipykernel=6.29.5
-  - matplotlib=3.10.0
   - numpy=2.2.1
-  - pytorch=2.5.1
-  - torchvision=0.20.1
   - tqdm=4.67.1
   - scikit-learn=1.6.0

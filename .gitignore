@@ -1,12 +1,7 @@
 
-aiml25-ma1
 data
-MA1-description.docx
 .pre-commit-config.yaml
-notebooks/nn_solution.ipynb
-notebooks/cnn_solution.ipynb
 material/data/*
-mnist_model.pth
 .ruff_cache/
 
 # Byte-compiled / optimized / DLL files
