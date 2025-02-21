@@ -17,16 +17,15 @@
 
 This repository contains the second mandatory assignment (MA2) for AIML25.  
 
-* **Dev setup**: Just like for MA1, to complete this assignment, you will need to have followed the Development Setup guide. Please complete this setup before starting the assignment.
-
-* **Helper code**: You are given a lot of boilerplate code as functions in `/src` to be imported into each of the notebooks. This is to simplify the assignments. Please acquaint yourself with this "helper code".
+* **Dev setup**: Just like for MA1, to complete this assignment, you need to follow the Development Setup guide. Please complete this setup before starting the assignment.
 
 * **Guides**: Each of the sub-assignments have a corresponding *guide notebook*. Everything needed to complete the assignments are in the notebooks. The guide notebooks are there to help you understand and practice the concepts. Please refer to the table below:
 
 | Assignment | Assignment notebook | Guide notebook | Description |
 | --- | --- | --- | --- |
-| Part 1 | [assignments/bert.ipynb](assignments/bert.ipynb) | [materials/bert_hf.ipynb](materials/bert_hf.ipynb) | BERT |
-| Part 2 | [assignments/llm.ipynb](assignments/llm.ipynb) | [materials/llm_wxai.ipynb](materials/llms_wxai.ipynb) | LLMs via WatsonX.ai |
+| Part 1 | [assignments/bert.ipynb](assignments/bow.ipynb) | [materials/bow_guide.ipynb](materials/bow_guide.ipynb) | BoW |
+| Part 2 | [assignments/bert.ipynb](assignments/bert.ipynb) | [materials/bert_hf.ipynb](materials/bert_hf.ipynb) | BERT |
+| Part 3 | [assignments/llm.ipynb](assignments/llm.ipynb) | [materials/llm_wxai.ipynb](materials/llms_wxai.ipynb) | LLMs via WatsonX.ai |
 
 **Please see due dates and other relevant information in the assignment description on Canvas.**
 
