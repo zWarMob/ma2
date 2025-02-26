@@ -1,5 +1,5 @@
 
-data
+#data
 .pre-commit-config.yaml
 material/data/*
 .ruff_cache/
