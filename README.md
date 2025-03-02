@@ -25,7 +25,7 @@ This repository contains the second mandatory assignment (MA2) for AIML25.
 | --- | --- | --- | --- |
 | Part 1 | [assignments/bow.ipynb](assignments/bow.ipynb) | [guides/bow_guide.ipynb](guides/bow_guide.ipynb) | BoW |
 | Part 2 | [assignments/bert.ipynb](assignments/bert.ipynb)| [guides/bert_guide.ipynb](guides/bert_guide.ipynb) | BERT |
-| Part 2 | [assignments/llm.ipynb](assignments/llm.ipynb) | [guides/llm_guide.ipynb](guides/llms_guide.ipynb) | LLMs |
+| Part 2 | [assignments/llm.ipynb](assignments/llm.ipynb) | [guides/llm_guide.ipynb](guides/llm_guide.ipynb) | LLMs |
 
 * **Dataset**: The dataset for this assignment is [AG News](https://huggingface.co/datasets/fancyzhx/ag_news): AG is a collection of more than 1 million news articles - we will use a subset of these. The AG's news topic classification dataset is constructed by Xiang Zhang (xiang.zhang@nyu.edu) from the dataset above. It is used as a text classification benchmark in the following paper: "Character-level Convolutional Networks for Text Classification" by Xiang Zhang, Junbo Zhao and Yann LeCun (Advances in Neural Information Processing Systems 28 (NIPS 2015)).
 
