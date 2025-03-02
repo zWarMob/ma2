@@ -1,4 +1,4 @@
-**AI & Machine Learning (KAN-CINTO4003U) - Copenhagen Business School | Fall 2025**
+**AI & Machine Learning (KAN-CINTO4003U) - Copenhagen Business School | Spring 2025**
 
 ***
 
@@ -23,21 +23,65 @@ This repository contains the second mandatory assignment (MA2) for AIML25.
 
 | Assignment | Assignment notebook | Guide notebook | Description |
 | --- | --- | --- | --- |
-| Part 1 | [assignments/bert.ipynb](assignments/bow.ipynb) | [guides/bow_guide.ipynb](guides/bow_guide.ipynb) | BoW |
-| Part 2 | [assignments/bert.ipynb](assignments/bert.ipynb) | [guides/bert_guide.ipynb](guides/bert_guide.ipynb) | BERT |
-| Part 3 | [assignments/llm.ipynb](assignments/llm.ipynb) | [guides/llm_guide.ipynb](guides/llms_guide.ipynb) | LLMs via WatsonX.ai |
+| Part 1 | [assignments/bow.ipynb](assignments/bow.ipynb) | [guides/bow_guide.ipynb](guides/bow_guide.ipynb) | BoW |
+| Part 2 | [assignments/bert.ipynb](assignments/bert.ipynb)| [guides/bert_guide.ipynb](guides/bert_guide.ipynb) | BERT |
+| Part 2 | [assignments/llm.ipynb](assignments/llm.ipynb) | [guides/llm_guide.ipynb](guides/llms_guide.ipynb) | LLMs |
+
+* **Dataset**: The dataset for this assignment is [AG News](https://huggingface.co/datasets/fancyzhx/ag_news): AG is a collection of more than 1 million news articles - we will use a subset of these. The AG's news topic classification dataset is constructed by Xiang Zhang (xiang.zhang@nyu.edu) from the dataset above. It is used as a text classification benchmark in the following paper: "Character-level Convolutional Networks for Text Classification" by Xiang Zhang, Junbo Zhao and Yann LeCun (Advances in Neural Information Processing Systems 28 (NIPS 2015)).
+
+## Part 1: Bag of Words (BoW)
+In this part, you will implement a simple Bag of Words (BoW) model. You will use the `CountVectorizer` (or `TFidfVectorizer`) from `sklearn` to create a BoW representation of a text dataset. You will then use the BoW representation to train a simple classifier for the AG News dataset. Specifically, your task is to
+
+- Explore the guidelines in the `bow_guide.ipynb` notebook.
+
+- Implement a BoW model to classify news articles in `assignments/bow.ipynb`.
+- Train one or more classifiers (e.g., Logistic Regression) on the BoW representation.
+- Experiment with different hyperparameters to (possibly) improve performance over the baseline in `bow.ipynb`.
+- Briefly reflect on the performance of your system and your choices of hyperparameters for the BoW model and the classifier
+    - Write your analysis as a markdown cell in the notebook.
+
+## Part 2: BERT
+In this part, you will embed the AG News dataset using a pre-trained BERT model. You will then use the BERT embeddings to train a simple classifier, similar to the BoW model in part 1. Specifically, your task is to
+
+- Explore the guidelines in the `bert_guide.ipynb` notebook.
+
+- Implement a BERT model to classify news articles in `assignments/bert.ipynb`.
+- Train one or more classifiers (e.g., Logistic Regression) on the BERT embeddings.
+- Experiment with different hyperparameters to (possibly) improve performance over the baseline in `llm_bert.ipynb`.
+- Briefly reflect on the performance of your system and your choices of hyperparameters for the BERT model and the classifier
+    - Write your analysis as a markdown cell in the notebook.
+
+- __**Optional**__: Fine-tune a pre-trained BERT model to classify news articles as is done in [guides/bert_guide_finetuning.ipybb](guides/bert_guide_finetuning.ipybb), the same task as in part 1. As this requires more computational resources, this part is optional. If you do decide to complete this part, you will need to use a GPU (e.g., Google Colab) to train the model. (For reference, training on a 2020 Macbook Pro with 16GB RAM and a M1 chip results in an out-of-memory error). Therefore, we suggest that you use Google Colab or another cloud-based service with a GPU. You can easily upload the `bert_guide.ipynb` notebook to Google Colab and run it there.
+
+## Part 3: Language Models (LLMs) via WatsonX.ai
+In this part, you will use choose and use a LLM from the WatsonX.ai platform to classify news articles, the same task as in part 1. Please follow the WatsonX.ai guide on Canvas to get access to the platform. Specifically, your task is to
+
+- Explore the guidelines in the `llm_guide.ipynb` notebook.
+- Select one more LLM model(s) from WatsonX.ai.
+- Use different prompt engineering techniques to (possibly) improve performance over the baseline in `llm_guide.ipynb`
+- Experiment with different hyperparameters and evaluate the model(s) using the test set.
+- Briefly reflect on the performance of your LLM system, your choices of prompt engineering techniques and how it compares to the BoW and BERT approaches
+    - Write your analysis as a markdown cell in the notebook.
+
+***
+
+<br>
 
 **Please see due dates and other relevant information in the assignment description on Canvas.**
+
+<br>
+
+***
 
 ## Getting started
 Please see sections VII - XI in the `Development setup guide` document on Canvas for instructions. To iterate, you need to:
 
 1. Fork this repository to your own GitHub account.
 2. Clone the forked repository to your local machine.
-3. Create a virtual environment and install the required packages.
+3. Create a virtual environment (from `environment.yml` with conda) and install the required packages.
 4. Start working on the assignment.
 5. Commit and push your changes to your GitHub repository.
-6. Submit a link to your GH assignment repo on Canvas.
+6. Submit a link to your GH assignment repo on Canvas (make sure that your repository is public!).
 
 
 ___
