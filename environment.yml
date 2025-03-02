@@ -4,9 +4,18 @@ channels:
   - https://repo.anaconda.com/pkgs/main
   - https://repo.anaconda.com/pkgs/r
 dependencies:
-  - ipykernel=6.29.5
-  - numpy=2.2.1
-  - tqdm=4.67.1
+  - python=3.11
   - scikit-learn
   - matplotlib
   - pandas
+  - python-decouple
+  - fastparquet
+  - huggingface_hub
+  - jupyter
+  - ipywidgets
+  - pre-commit
+  - transformers
+  - datasets
+  - pytorch
+  - pip:
+    - ibm-watsonx-ai==1.2.9
