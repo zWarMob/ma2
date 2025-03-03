@@ -5,7 +5,7 @@
 ### Group members
 | Student name | Student ID |
 | --- | --- |
-| #NAME# | #ID# |
+| Petyo | #ID# |
 | #NAME# | #ID# |
 | #NAME# | #ID# |
 
